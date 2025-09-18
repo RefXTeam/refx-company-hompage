@@ -22,6 +22,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <title>{title}</title>
   <link rel="canonical" href={canonicalURL} />
 
+  <!-- Domain Verification -->
+  <meta name="facebook-domain-verification" content="pzotlo7o2alhnan7o9y96dw18h7w0h" />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={Astro.url} />
