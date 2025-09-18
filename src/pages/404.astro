@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="페이지를 찾을 수 없습니다 - RefX" description="요청하신 페이지를 찾을 수 없습니다.">
+  <Header />
+
+  <main class="min-h-screen flex items-center justify-center py-16">
+    <div class="max-w-2xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <!-- 404 Visual -->
+      <div class="mb-8">
+        <div class="text-8xl md:text-9xl font-bold text-gray-200 mb-4">404</div>
+        <div class="text-6xl mb-4">☕💻</div>
+      </div>
+
+      <!-- Error Message -->
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        페이지를 찾을 수 없습니다
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        요청하신 페이지가 존재하지 않거나 이동되었을 수 있습니다.<br>
+        커피 한 잔과 함께 다른 페이지를 둘러보시겠어요?
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <a href="/" class="bg-refx-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+          홈으로 돌아가기
+        </a>
+        <a href="/coffee" class="bg-coffee-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-coffee-700 transition-colors">
+          커피 보러가기
+        </a>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <a href="/about" class="text-gray-600 hover:text-refx-primary transition-colors">
+          회사소개
+        </a>
+        <a href="/services" class="text-gray-600 hover:text-refx-primary transition-colors">
+          개발서비스
+        </a>
+        <a href="/portfolio" class="text-gray-600 hover:text-refx-primary transition-colors">
+          포트폴리오
+        </a>
+        <a href="/contact" class="text-gray-600 hover:text-refx-primary transition-colors">
+          연락처
+        </a>
+      </div>
+
+      <!-- Fun Message -->
+      <div class="mt-12 p-6 bg-gray-50 rounded-lg">
+        <p class="text-gray-600 italic">
+          "코드에 버그가 있을 때는 커피를, 페이지를 못 찾을 때도 커피를..."<br>
+          - 개발자의 영원한 진리
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>

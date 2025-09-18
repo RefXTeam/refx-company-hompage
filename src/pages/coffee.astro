@@ -1,0 +1,385 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="레퍼런스커피 - RefX" description="엄선된 원두와 정교한 로스팅으로 만든 프리미엄 커피 브랜드, 레퍼런스커피입니다.">
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-coffee-900 to-coffee-700 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <div class="text-6xl mb-6">☕</div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">레퍼런스커피</h1>
+          <p class="text-xl text-coffee-200 max-w-3xl mx-auto">
+            엄선된 원두와 정교한 로스팅으로 만든 프리미엄 커피<br>
+            개발자의 완벽한 파트너
+          </p>
+          <div class="mt-8">
+            <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="bg-white text-coffee-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+              </svg>
+              스마트스토어에서 주문하기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">브랜드 스토리</h2>
+            <div class="space-y-4 text-gray-600">
+              <p>
+                레퍼런스커피는 개발자의 일상에서 시작되었습니다.
+                코딩과 함께하는 완벽한 커피를 찾는 여정에서 탄생한 프리미엄 브랜드입니다.
+              </p>
+              <p>
+                우리는 커피 한 잔이 단순한 음료가 아니라, 창작과 집중을 위한 필수 요소라고 믿습니다.
+                그래서 엄선된 원두와 정교한 로스팅 과정을 통해
+                개발자들의 창의성을 극대화할 수 있는 커피를 만들고 있습니다.
+              </p>
+              <p>
+                기술에 대한 완벽함을 추구하는 마음으로 커피에도 타협하지 않는 품질을 구현합니다.
+                매일 마시는 커피가 특별한 경험이 되도록 하는 것이 우리의 목표입니다.
+              </p>
+            </div>
+          </div>
+          <div class="bg-coffee-50 rounded-lg p-8">
+            <div class="text-center">
+              <div class="text-6xl mb-4">📊</div>
+              <h3 class="text-2xl font-semibold text-coffee-900 mb-4">성장 지표</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-lg">
+                  <div class="text-2xl font-bold text-coffee-900">200+</div>
+                  <div class="text-sm text-coffee-700">만족한 고객</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg">
+                  <div class="text-2xl font-bold text-coffee-900">7배</div>
+                  <div class="text-sm text-coffee-700">성장 가속화</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg">
+                  <div class="text-2xl font-bold text-coffee-900">99%</div>
+                  <div class="text-sm text-coffee-700">고객 만족도</div>
+                </div>
+                <div class="bg-white p-4 rounded-lg">
+                  <div class="text-2xl font-bold text-coffee-900">24/7</div>
+                  <div class="text-sm text-coffee-700">주문 모니터링</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">왜 레퍼런스커피인가요?</h2>
+          <p class="text-xl text-gray-600">개발자를 위해 특별히 설계된 프리미엄 커피</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Quality -->
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">엄선된 원두</h3>
+            <p class="text-gray-600">
+              세계 각지의 최고 품질 원두만을 엄선하여
+              일관된 품질과 풍부한 향을 보장합니다.
+            </p>
+          </div>
+
+          <!-- Roasting -->
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">정교한 로스팅</h3>
+            <p class="text-gray-600">
+              원두별 최적의 로스팅 프로파일을 적용하여
+              각 원두의 고유한 특성을 극대화합니다.
+            </p>
+          </div>
+
+          <!-- Fresh -->
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+            <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">신선한 배송</h3>
+            <p class="text-gray-600">
+              주문 즉시 로스팅하여 최고의 신선도로
+              고객에게 전달되는 시스템을 구축했습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Line -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">제품 라인업</h2>
+          <p class="text-xl text-gray-600">다양한 취향과 상황에 맞는 프리미엄 블렌드</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Morning Blend -->
+          <div class="bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl p-6">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🌅</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Morning Code Blend</h3>
+              <p class="text-gray-600 mb-4">
+                아침 첫 커밋을 위한 부드럽고 깔끔한 맛의 블렌드
+              </p>
+              <div class="text-sm text-gray-500">
+                <span class="font-medium">로스팅:</span> 미디엄 라이트<br>
+                <span class="font-medium">맛:</span> 과일향, 꽃향, 밝은 산미
+              </div>
+            </div>
+          </div>
+
+          <!-- Focus Blend -->
+          <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-6">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🎯</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Deep Focus Blend</h3>
+              <p class="text-gray-600 mb-4">
+                깊은 집중이 필요한 코딩 세션을 위한 진한 풍미
+              </p>
+              <div class="text-sm text-gray-500">
+                <span class="font-medium">로스팅:</span> 미디엄 다크<br>
+                <span class="font-medium">맛:</span> 초콜릿, 견과류, 묵직한 바디
+              </div>
+            </div>
+          </div>
+
+          <!-- Debug Blend -->
+          <div class="bg-gradient-to-br from-red-100 to-pink-100 rounded-xl p-6">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🐛</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Debug Blend</h3>
+              <p class="text-gray-600 mb-4">
+                버그 잡기와 야간 작업을 위한 강렬한 에너지
+              </p>
+              <div class="text-sm text-gray-500">
+                <span class="font-medium">로스팅:</span> 다크<br>
+                <span class="font-medium">맛:</span> 카라멜, 스모키, 강한 쓴맛
+              </div>
+            </div>
+          </div>
+
+          <!-- Decaf Blend -->
+          <div class="bg-gradient-to-br from-green-100 to-teal-100 rounded-xl p-6">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🌙</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Late Night Decaf</h3>
+              <p class="text-gray-600 mb-4">
+                저녁 시간 코드 리뷰를 위한 카페인 없는 깊은 맛
+              </p>
+              <div class="text-sm text-gray-500">
+                <span class="font-medium">로스팅:</span> 미디엄<br>
+                <span class="font-medium">맛:</span> 부드러운 단맛, 밸런스
+              </div>
+            </div>
+          </div>
+
+          <!-- Cold Brew -->
+          <div class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-xl p-6">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🧊</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Cold Brew Special</h3>
+              <p class="text-gray-600 mb-4">
+                더운 여름 코딩을 위한 특별한 콜드브루 블렌드
+              </p>
+              <div class="text-sm text-gray-500">
+                <span class="font-medium">로스팅:</span> 미디엄<br>
+                <span class="font-medium">맛:</span> 달콤함, 부드러운 목넘김
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Origin -->
+          <div class="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-xl p-6">
+            <div class="text-center">
+              <div class="text-4xl mb-4">🌍</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Single Origin Series</h3>
+              <p class="text-gray-600 mb-4">
+                매월 다른 지역의 특별한 원두로 만나는 한정판
+              </p>
+              <div class="text-sm text-gray-500">
+                <span class="font-medium">로스팅:</span> 다양<br>
+                <span class="font-medium">맛:</span> 지역별 고유 특성
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Integration -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">기술과 커피의 만남</h2>
+          <p class="text-xl text-gray-600">최신 기술로 관리되는 스마트한 커피 비즈니스</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Monitoring System -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-refx-primary rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">실시간 주문 모니터링</h3>
+            </div>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                Spring Boot 기반 주문 모니터링 시스템
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                텔레그램 봇을 통한 실시간 알림
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                1분 간격 자동 주문 확인
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                99.5% 시스템 가동률 달성
+              </li>
+            </ul>
+          </div>
+
+          <!-- Data Analytics -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-coffee-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">데이터 기반 운영</h3>
+            </div>
+            <ul class="space-y-3 text-gray-600">
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-coffee-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                고객 구매 패턴 분석
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-coffee-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                개인화된 상품 추천 시스템
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-coffee-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                재고 관리 자동화
+              </li>
+              <li class="flex items-start">
+                <span class="w-2 h-2 bg-coffee-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                마케팅 캠페인 최적화
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">소셜 미디어</h2>
+          <p class="text-xl text-gray-600">레퍼런스커피의 일상을 만나보세요</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Instagram -->
+          <div class="bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl p-8 text-white text-center">
+            <div class="text-4xl mb-4">📸</div>
+            <h3 class="text-2xl font-bold mb-4">Instagram</h3>
+            <p class="text-pink-100 mb-6">
+              커피 로스팅 과정부터 고객 후기까지<br>
+              레퍼런스커피의 모든 순간들
+            </p>
+            <div class="text-pink-100 mb-6">
+              <div class="text-3xl font-bold">200+</div>
+              <div class="text-sm">팔로워 (급성장 중!)</div>
+            </div>
+            <a href="https://instagram.com/refx.coffee" target="_blank" rel="noopener noreferrer" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C3.85 14.82 3.85 13.1 5.126 11.824c1.275-1.275 2.995-1.275 4.271 0 1.275 1.275 1.275 2.995 0 4.27-.875.807-2.026 1.297-3.323 1.297zm7.138 0c-1.297 0-2.448-.49-3.323-1.297-1.275-1.275-1.275-2.995 0-4.27 1.275-1.275 2.995-1.275 4.271 0 1.275 1.275 1.275 2.995 0 4.27-.875.807-2.026 1.297-3.323 1.297z"/>
+              </svg>
+              팔로우하기
+            </a>
+          </div>
+
+          <!-- Naver SmartStore -->
+          <div class="bg-gradient-to-br from-green-500 to-blue-600 rounded-xl p-8 text-white text-center">
+            <div class="text-4xl mb-4">🛒</div>
+            <h3 class="text-2xl font-bold mb-4">네이버 스마트스토어</h3>
+            <p class="text-green-100 mb-6">
+              간편한 주문과 빠른 배송<br>
+              네이버페이로 안전한 결제
+            </p>
+            <div class="text-green-100 mb-6">
+              <div class="text-3xl font-bold">★ 4.9</div>
+              <div class="text-sm">고객 만족도</div>
+            </div>
+            <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+              </svg>
+              스토어 방문하기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-coffee-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          완벽한 커피와 함께 코딩하세요
+        </h2>
+        <p class="text-xl text-coffee-200 mb-8">
+          개발자를 위해 특별히 만든 레퍼런스커피를 지금 주문하세요
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="bg-white text-coffee-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            지금 주문하기
+          </a>
+          <a href="https://instagram.com/refx.coffee" target="_blank" rel="noopener noreferrer" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-coffee-900 transition-colors">
+            인스타그램 보기
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

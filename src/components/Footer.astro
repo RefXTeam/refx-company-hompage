@@ -1,0 +1,69 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div class="col-span-1 md:col-span-2">
+        <div class="flex items-center mb-4">
+          <span class="text-2xl font-bold text-white">RefX</span>
+          <span class="ml-1 text-coffee-400">☕</span>
+        </div>
+        <p class="text-gray-300 mb-4">
+          백엔드 개발 전문 기업이자 프리미엄 커피 브랜드 레퍼런스커피를 운영합니다.<br>
+          기술과 커피가 만나는 곳에서 최고의 품질을 추구합니다.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/RefXTeam" class="text-gray-400 hover:text-white transition-colors">
+            <span class="sr-only">GitHub</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/refx.coffee" class="text-gray-400 hover:text-white transition-colors">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C3.85 14.82 3.85 13.1 5.126 11.824c1.275-1.275 2.995-1.275 4.271 0 1.275 1.275 1.275 2.995 0 4.27-.875.807-2.026 1.297-3.323 1.297zm7.138 0c-1.297 0-2.448-.49-3.323-1.297-1.275-1.275-1.275-2.995 0-4.27 1.275-1.275 2.995-1.275 4.271 0 1.275 1.275 1.275 2.995 0 4.27-.875.807-2.026 1.297-3.323 1.297z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase mb-4">바로가기</h3>
+        <ul class="space-y-2">
+          <li><a href="/about" class="text-gray-300 hover:text-white transition-colors">회사소개</a></li>
+          <li><a href="/services" class="text-gray-300 hover:text-white transition-colors">개발서비스</a></li>
+          <li><a href="/portfolio" class="text-gray-300 hover:text-white transition-colors">포트폴리오</a></li>
+          <li><a href="/contact" class="text-gray-300 hover:text-white transition-colors">연락처</a></li>
+        </ul>
+      </div>
+
+      <!-- Coffee Links -->
+      <div>
+        <h3 class="text-sm font-semibold text-gray-200 tracking-wider uppercase mb-4">레퍼런스커피</h3>
+        <ul class="space-y-2">
+          <li><a href="/coffee" class="text-gray-300 hover:text-white transition-colors">브랜드 스토리</a></li>
+          <li><a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">스마트스토어</a></li>
+          <li><a href="https://instagram.com/refx.coffee" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">인스타그램</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-gray-700">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © {currentYear} RefX (레퍼런스엑스). All rights reserved.
+        </p>
+        <div class="mt-4 md:mt-0">
+          <a href="mailto:contact@refx.kr" class="text-gray-400 hover:text-white text-sm transition-colors">
+            contact@refx.kr
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

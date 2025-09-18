@@ -1,0 +1,62 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { title, description = "레퍼런스엑스 - 기술과 커피가 만나는 곳", ogImage = "/images/og-image.jpg" } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content={description} />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+
+  <!-- SEO Meta Tags -->
+  <title>{title}</title>
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={Astro.url} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(ogImage, Astro.url)} />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={Astro.url} />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content={new URL(ogImage, Astro.url)} />
+
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "레퍼런스엑스",
+      "url": "https://www.refx.kr",
+      "logo": "https://www.refx.kr/images/logo.png",
+      "description": "백엔드 개발 전문 기업 및 레퍼런스커피 브랜드",
+      "sameAs": [
+        "https://github.com/RefXTeam",
+        "https://instagram.com/refx.coffee"
+      ]
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+  <slot />
+</body>
+</html>

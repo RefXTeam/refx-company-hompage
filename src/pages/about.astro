@@ -1,0 +1,225 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="회사소개 - RefX" description="레퍼런스엑스의 비전, 미션, 그리고 팀에 대해 알아보세요.">
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">About RefX</h1>
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            기술과 커피, 두 가지 열정이 만나 새로운 가치를 창조하는 곳
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">우리의 이야기</h2>
+            <div class="space-y-4 text-gray-600">
+              <p>
+                레퍼런스엑스(RefX)는 백엔드 개발의 전문성과 커피에 대한 열정을 하나의 브랜드로 결합한 독특한 회사입니다.
+              </p>
+              <p>
+                우리는 최신 기술 스택(Java 24, Spring Boot 3.5.5)을 활용한 고성능 백엔드 시스템을 구축하는 동시에,
+                엄선된 원두로 만든 프리미엄 커피 브랜드 '레퍼런스커피'를 운영하고 있습니다.
+              </p>
+              <p>
+                코딩과 커피, 이 두 가지 모두에서 완벽함을 추구하며,
+                고객에게 최고의 경험을 제공하는 것이 우리의 목표입니다.
+              </p>
+            </div>
+          </div>
+          <div class="bg-gray-100 rounded-lg p-8">
+            <div class="text-center">
+              <div class="text-6xl mb-4">👨‍💻☕</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">기술과 커피의 만남</h3>
+              <p class="text-gray-600">
+                개발자의 필수품인 커피에서 시작된 우리의 여정
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Mission -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Mission</h3>
+              <p class="text-gray-600">
+                최신 기술과 장인정신으로 디지털 혁신과 프리미엄 커피 경험을 제공하여,
+                고객의 일상에 특별한 가치를 더합니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Vision</h3>
+              <p class="text-gray-600">
+                기술과 커피의 완벽한 조화를 통해 업계의 새로운 기준을 제시하고,
+                혁신적인 서비스로 사회에 긍정적인 영향을 미치는 기업이 되겠습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CEO Profile -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">CEO 프로필</h2>
+          <p class="text-xl text-gray-600">최광명 대표</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="bg-gradient-to-br from-refx-primary to-blue-700 rounded-xl p-8 text-white">
+              <h3 class="text-2xl font-bold mb-4">최광명 (Kwangmyung Choi)</h3>
+              <p class="text-blue-100 mb-4">CEO & Founder, RefX</p>
+              <div class="space-y-2 text-blue-100">
+                <p>• 백엔드 개발 전문가</p>
+                <p>• Spring Boot & Java 생태계 전문</p>
+                <p>• AWS 클라우드 아키텍처 설계</p>
+                <p>• 커피 브랜드 기획 및 운영</p>
+              </div>
+              <div class="mt-6">
+                <a href="https://www.linkedin.com/in/kwangmyung-choi-2792aa24/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-white hover:text-blue-200 transition-colors">
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                  </svg>
+                  LinkedIn 프로필
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-3">전문 분야</h4>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                  <h5 class="font-semibold text-blue-900 mb-1">Backend Development</h5>
+                  <p class="text-sm text-blue-700">Java, Spring Boot, Microservices</p>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg">
+                  <h5 class="font-semibold text-green-900 mb-1">Cloud Architecture</h5>
+                  <p class="text-sm text-green-700">AWS, Docker, CI/CD</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg">
+                  <h5 class="font-semibold text-purple-900 mb-1">System Design</h5>
+                  <p class="text-sm text-purple-700">High-performance, Scalable</p>
+                </div>
+                <div class="bg-coffee-50 p-4 rounded-lg">
+                  <h5 class="font-semibold text-coffee-900 mb-1">Coffee Business</h5>
+                  <p class="text-sm text-coffee-700">Brand Strategy, Operations</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-gray-900 mb-3">주요 성과</h4>
+              <ul class="space-y-2 text-gray-600">
+                <li class="flex items-start">
+                  <span class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  레퍼런스커피 200+ 고객 달성 및 급성장 (7배 가속)
+                </li>
+                <li class="flex items-start">
+                  <span class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Spring Boot 3.5.5 + Java 24 고성능 시스템 구축
+                </li>
+                <li class="flex items-start">
+                  <span class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  AWS Lightsail 기반 99.5% 가동률 시스템 운영
+                </li>
+                <li class="flex items-start">
+                  <span class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  OAuth 2.0 + BCrypt 보안 시스템 설계 및 구현
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">핵심 가치</h2>
+          <p class="text-xl text-gray-600">우리가 소중히 여기는 가치들</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">혁신</h3>
+            <p class="text-gray-600">
+              최신 기술을 적극 도입하고, 새로운 아이디어로 지속적인 혁신을 추구합니다.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">품질</h3>
+            <p class="text-gray-600">
+              타협하지 않는 품질로 고객에게 최고의 서비스와 제품을 제공합니다.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-coffee-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-coffee-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">열정</h3>
+            <p class="text-gray-600">
+              기술과 커피에 대한 진정한 열정으로 모든 일에 최선을 다합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

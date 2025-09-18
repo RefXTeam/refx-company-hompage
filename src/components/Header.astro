@@ -1,0 +1,92 @@
+---
+const navigation = [
+  { name: '홈', href: '/' },
+  { name: '회사소개', href: '/about' },
+  { name: '개발서비스', href: '/services' },
+  { name: '레퍼런스커피', href: '/coffee' },
+  { name: '포트폴리오', href: '/portfolio' },
+  { name: '연락처', href: '/contact' }
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center">
+          <span class="text-2xl font-bold text-refx-primary">RefX</span>
+          <span class="ml-1 text-coffee-600">☕</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-4">
+          {navigation.map((item) => (
+            <a
+              href={item.href}
+              class={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                currentPath === item.href
+                  ? 'bg-refx-primary text-white'
+                  : 'text-gray-600 hover:text-refx-primary hover:bg-gray-50'
+              }`}
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button
+          type="button"
+          class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-refx-primary hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-refx-primary"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">메뉴 열기</span>
+          <!-- Menu icon -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+        {navigation.map((item) => (
+          <a
+            href={item.href}
+            class={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+              currentPath === item.href
+                ? 'bg-refx-primary text-white'
+                : 'text-gray-600 hover:text-refx-primary hover:bg-gray-50'
+            }`}
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+
+    if (button && menu) {
+      button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>

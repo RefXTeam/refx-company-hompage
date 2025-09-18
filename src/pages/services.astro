@@ -1,0 +1,384 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="개발서비스 - RefX" description="Spring Boot, Java 24를 활용한 고성능 백엔드 시스템 구축 서비스를 제공합니다.">
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-refx-primary to-blue-700 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">백엔드 개발 서비스</h1>
+          <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+            Java 24, Spring Boot 3.5.5를 활용한 고성능 백엔드 시스템과<br>
+            AWS 클라우드 인프라 구축까지 원스톱 서비스
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            전문 서비스 영역
+          </h2>
+          <p class="text-xl text-gray-600">
+            최신 기술 스택으로 안정적이고 확장 가능한 시스템을 구축합니다
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Backend Development -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div class="text-center mb-6">
+              <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">백엔드 시스템 개발</h3>
+              <p class="text-gray-600">고성능, 확장 가능한 서버 애플리케이션 구축</p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Spring Boot 3.5.5</h4>
+                  <p class="text-sm text-gray-600">최신 Spring 생태계를 활용한 엔터프라이즈급 애플리케이션</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Java 24</h4>
+                  <p class="text-sm text-gray-600">최신 Java 기능과 성능 개선사항 적용</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">WebFlux & 반응형 프로그래밍</h4>
+                  <p class="text-sm text-gray-600">논블로킹 I/O를 통한 높은 처리량 달성</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">API 설계 및 구현</h4>
+                  <p class="text-sm text-gray-600">RESTful API, GraphQL, 마이크로서비스 아키텍처</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud Infrastructure -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div class="text-center mb-6">
+              <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">AWS 클라우드 인프라</h3>
+              <p class="text-gray-600">확장 가능하고 안정적인 클라우드 아키텍처</p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">EC2 & Lightsail</h4>
+                  <p class="text-sm text-gray-600">비용 효율적인 서버 인스턴스 설계 및 관리</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">RDS & DynamoDB</h4>
+                  <p class="text-sm text-gray-600">관계형 및 NoSQL 데이터베이스 설계</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">S3 & CloudFront</h4>
+                  <p class="text-sm text-gray-600">정적 자산 관리 및 CDN 구축</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Load Balancer & Auto Scaling</h4>
+                  <p class="text-sm text-gray-600">고가용성 및 탄력적 확장 구성</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CI/CD & DevOps -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div class="text-center mb-6">
+              <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">CI/CD & DevOps</h3>
+              <p class="text-gray-600">자동화된 개발 및 배포 파이프라인 구축</p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">GitHub Actions</h4>
+                  <p class="text-sm text-gray-600">완전 자동화된 빌드 및 배포 워크플로우</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Docker & Containerization</h4>
+                  <p class="text-sm text-gray-600">컨테이너 기반 애플리케이션 패키징</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">모니터링 & 로깅</h4>
+                  <p class="text-sm text-gray-600">CloudWatch, Prometheus를 통한 시스템 모니터링</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Terraform & IaC</h4>
+                  <p class="text-sm text-gray-600">코드로 관리하는 인프라스트럭처</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security & Monitoring -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div class="text-center mb-6">
+              <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">보안 & 인증</h3>
+              <p class="text-gray-600">엔터프라이즈급 보안 시스템 구축</p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">OAuth 2.0 & JWT</h4>
+                  <p class="text-sm text-gray-600">안전한 사용자 인증 및 권한 관리</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">BCrypt & 암호화</h4>
+                  <p class="text-sm text-gray-600">비밀번호 해싱 및 데이터 암호화</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">API 보안</h4>
+                  <p class="text-sm text-gray-600">Rate Limiting, CORS, HTTPS 강제</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">AWS IAM & VPC</h4>
+                  <p class="text-sm text-gray-600">클라우드 보안 네트워크 설계</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">기술 스택</h2>
+          <p class="text-xl text-gray-600">검증된 최신 기술로 안정적인 시스템을 구축합니다</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <!-- Programming Languages -->
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">☕</div>
+            <h4 class="font-semibold text-gray-900">Java 24</h4>
+            <p class="text-sm text-gray-600">Latest LTS</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">📜</div>
+            <h4 class="font-semibold text-gray-900">TypeScript</h4>
+            <p class="text-sm text-gray-600">Type Safety</p>
+          </div>
+
+          <!-- Frameworks -->
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">🌱</div>
+            <h4 class="font-semibold text-gray-900">Spring Boot</h4>
+            <p class="text-sm text-gray-600">3.5.5</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">⚛️</div>
+            <h4 class="font-semibold text-gray-900">WebFlux</h4>
+            <p class="text-sm text-gray-600">Reactive</p>
+          </div>
+
+          <!-- Cloud -->
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">☁️</div>
+            <h4 class="font-semibold text-gray-900">AWS</h4>
+            <p class="text-sm text-gray-600">Cloud</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">🐳</div>
+            <h4 class="font-semibold text-gray-900">Docker</h4>
+            <p class="text-sm text-gray-600">Container</p>
+          </div>
+
+          <!-- Databases -->
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">🗄️</div>
+            <h4 class="font-semibold text-gray-900">PostgreSQL</h4>
+            <p class="text-sm text-gray-600">RDBMS</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">📊</div>
+            <h4 class="font-semibold text-gray-900">DynamoDB</h4>
+            <p class="text-sm text-gray-600">NoSQL</p>
+          </div>
+
+          <!-- Tools -->
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">🔧</div>
+            <h4 class="font-semibold text-gray-900">Gradle</h4>
+            <p class="text-sm text-gray-600">Build Tool</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">📈</div>
+            <h4 class="font-semibold text-gray-900">Prometheus</h4>
+            <p class="text-sm text-gray-600">Monitoring</p>
+          </div>
+
+          <!-- Security -->
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">🔐</div>
+            <h4 class="font-semibold text-gray-900">OAuth 2.0</h4>
+            <p class="text-sm text-gray-600">Security</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <div class="text-3xl mb-2">🔑</div>
+            <h4 class="font-semibold text-gray-900">BCrypt</h4>
+            <p class="text-sm text-gray-600">Encryption</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Process -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">프로젝트 진행 과정</h2>
+          <p class="text-xl text-gray-600">체계적이고 투명한 개발 프로세스</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">요구사항 분석</h3>
+            <p class="text-gray-600">고객의 니즈를 파악하고 기술적 요구사항을 정의합니다</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">설계 & 계획</h3>
+            <p class="text-gray-600">시스템 아키텍처를 설계하고 개발 일정을 수립합니다</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">개발 & 테스트</h3>
+            <p class="text-gray-600">애자일 방법론으로 개발하며 지속적으로 테스트합니다</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-white font-bold text-xl">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">배포 & 운영</h3>
+            <p class="text-gray-600">안정적인 배포 후 지속적인 모니터링과 지원을 제공합니다</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-refx-primary text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          프로젝트를 시작할 준비가 되셨나요?
+        </h2>
+        <p class="text-xl text-blue-100 mb-8">
+          최신 기술로 안정적이고 확장 가능한 시스템을 구축해드립니다
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-white text-refx-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            프로젝트 문의하기
+          </a>
+          <a href="/portfolio" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-refx-primary transition-colors">
+            포트폴리오 보기
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

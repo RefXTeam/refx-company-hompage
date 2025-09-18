@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="RefX - 기술과 커피가 만나는 곳" description="백엔드 개발 전문 기업이자 프리미엄 커피 브랜드를 운영하는 레퍼런스엑스입니다.">
+  <Header />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-refx-primary to-blue-700 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            기술과 커피가 만나는 곳
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-blue-100">
+            백엔드 개발의 전문성과 프리미엄 커피의 품질을<br>
+            하나의 브랜드에서 경험하세요
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/services" class="bg-white text-refx-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              개발 서비스 보기
+            </a>
+            <a href="/coffee" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-refx-primary transition-colors">
+              레퍼런스커피 보기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            우리가 하는 일
+          </h2>
+          <p class="text-xl text-gray-600">
+            두 가지 전문 영역에서 최고의 품질을 제공합니다
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Backend Development -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">백엔드 개발 서비스</h3>
+              <p class="text-gray-600 mb-6">
+                Spring Boot, Java 24를 활용한 고성능 백엔드 시스템 구축.<br>
+                AWS 클라우드 인프라와 CI/CD 파이프라인 설계까지 원스톱 서비스.
+              </p>
+              <div class="flex flex-wrap gap-2 justify-center mb-6">
+                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Java 24</span>
+                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Spring Boot</span>
+                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">AWS</span>
+                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Docker</span>
+              </div>
+              <a href="/services" class="text-refx-primary font-semibold hover:underline">
+                자세히 보기 →
+              </a>
+            </div>
+          </div>
+
+          <!-- Reference Coffee -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-2xl">☕</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">레퍼런스커피</h3>
+              <p class="text-gray-600 mb-6">
+                엄선된 원두와 정교한 로스팅으로 만든 프리미엄 커피.<br>
+                네이버 스마트스토어에서 200+ 고객들의 사랑을 받고 있습니다.
+              </p>
+              <div class="flex flex-wrap gap-2 justify-center mb-6">
+                <span class="px-3 py-1 bg-coffee-100 text-coffee-800 rounded-full text-sm">프리미엄 원두</span>
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">정교한 로스팅</span>
+                <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">200+ 고객</span>
+              </div>
+              <a href="/coffee" class="text-coffee-600 font-semibold hover:underline">
+                브랜드 스토리 →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            왜 RefX를 선택해야 할까요?
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">최신 기술 스택</h3>
+            <p class="text-gray-600">Java 24, Spring Boot 3.5.5 등 최신 기술로 미래를 준비합니다</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">검증된 품질</h3>
+            <p class="text-gray-600">99.5% 가동률의 시스템과 200+ 고객이 인정한 커피 품질</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-12 h-12 bg-coffee-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-coffee-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">열정과 전문성</h3>
+            <p class="text-gray-600">기술과 커피에 대한 진정한 열정으로 최고를 추구합니다</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-coffee-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          함께 만들어갈 준비가 되셨나요?
+        </h2>
+        <p class="text-xl text-coffee-200 mb-8">
+          프로젝트 문의부터 커피 주문까지, 언제든 연락주세요
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-white text-coffee-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            프로젝트 문의하기
+          </a>
+          <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-coffee-900 transition-colors">
+            커피 주문하기
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

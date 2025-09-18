@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.refx.kr/sitemap-index.xml
+
+# Specific rules for common crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: NaverBot
+Allow: /
+
+# Block access to admin or private areas (if any)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
