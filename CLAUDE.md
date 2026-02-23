@@ -48,6 +48,10 @@ npm run preview
 - **호스팅**: GitHub Pages
 - **DNS**: AWS Route53
 - **CI/CD**: GitHub Actions
+- **백엔드**: Spring Boot 4.x.x, Java 25 LTS
+- **AI 개발 도구**: Claude Code (AI 페어 프로그래밍)
+- **터미널 자동화**: tmux, Git Worktree
+- **AI 프로토콜**: MCP (Model Context Protocol)
 
 ## 📊 프로젝트 현황
 
@@ -69,6 +73,9 @@ npm run preview
 - **비용 절감**: 77% (월 $1.5)
 - **배포 시간**: 43초
 - **페이지 수**: 10개
+- **Java 버전**: Java 25 LTS
+- **Spring Boot 버전**: 4.0.3
+- **AI 자동화 도구**: Claude Code + Git Worktree + tmux + MCP
 
 ## ⚠️ 주의사항
 
@@ -88,5 +95,5 @@ npm run preview
 
 ---
 
-**마지막 업데이트**: 2025년 9월 19일
-**버전**: 1.0.0
+**마지막 업데이트**: 2026년 2월 23일
+**버전**: 1.1.0
