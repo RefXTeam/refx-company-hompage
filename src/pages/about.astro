@@ -7,41 +7,90 @@ import Footer from '../components/Footer.astro';
 <BaseLayout title="회사소개 - RefX" description="기술과 커피가 만나는 곳, 레퍼런스엑스의 이야기">
   <Header />
   <main>
-    <!-- Hero: Warm Coffee Gradient -->
-    <section class="bg-gradient-to-br from-coffee-700 via-coffee-800 to-coffee-900 text-white py-24 lg:py-32">
+
+    <!-- Hero: Mobile/Tablet = Coffee Gradient -->
+    <section class="lg:hidden bg-gradient-to-br from-coffee-700 via-coffee-800 to-coffee-900 text-white py-20">
+      <div class="max-w-8xl mx-auto px-6">
+        <span class="font-display text-label text-coffee-300 tracking-widest uppercase block mb-4">About · 회사소개</span>
+        <h1 class="font-display font-black text-5xl md:text-6xl leading-tight mb-5">
+          기술과 커피,<br>두 가지 열정으로<br><span class="text-coffee-300">만드는 가치</span>
+        </h1>
+        <p class="text-coffee-100 text-base md:text-lg leading-relaxed max-w-md">
+          백엔드 개발 전문 기업이자 프리미엄 커피 브랜드.<br>두 영역 모두에서 타협 없는 품질을 추구합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Hero: Desktop = White Minimal -->
+    <section class="hidden lg:block bg-white dark:bg-slate-900 py-32 border-b border-gray-100 dark:border-slate-800">
       <div class="max-w-8xl mx-auto px-6 lg:px-8">
-        <div class="max-w-2xl">
-          <span class="font-display text-label text-coffee-300 tracking-widest uppercase block mb-4">About RefX</span>
-          <h1 class="font-display font-black text-5xl md:text-6xl leading-tight mb-6">
-            기술과 커피,<br>두 가지 열정으로<br>만드는 <span class="text-coffee-300">가치</span>
-          </h1>
-          <p class="text-coffee-100 text-lg leading-relaxed">
-            백엔드 개발 전문 기업이자 프리미엄 커피 브랜드. 두 영역 모두에서 타협 없는 품질을 추구합니다.
-          </p>
+        <div class="grid lg:grid-cols-2 gap-16 items-end">
+          <div>
+            <span class="font-display text-label text-terra tracking-widest uppercase block mb-6">About · 회사소개</span>
+            <h1 class="font-display font-black text-8xl leading-[0.88] text-gray-900 dark:text-white">
+              기술과 커피,<br>두 가지 열정.
+            </h1>
+          </div>
+          <div class="pb-3">
+            <p class="text-gray-600 dark:text-slate-300 text-lg leading-relaxed">
+              백엔드 개발 전문 기업이자 프리미엄 커피 브랜드 레퍼런스커피를 운영합니다.<br>
+              두 영역 모두에서 타협 없는 품질을 추구합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar: All Sizes -->
+    <section class="bg-coffee-50 dark:bg-slate-800 lg:bg-gray-50 lg:dark:bg-slate-800 py-10 border-b border-coffee-100 dark:border-slate-700 lg:border-gray-100">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-3 gap-4 md:gap-10">
+          {[
+            { value: '99.5%', label: '서비스 가동률' },
+            { value: '200+', label: '누적 고객사' },
+            { value: '$1.5', label: '월 인프라 비용' },
+          ].map(stat => (
+            <div>
+              <p class="font-display font-black text-3xl md:text-4xl text-coffee-700 dark:text-coffee-300 lg:text-gray-900 lg:dark:text-white mb-1">{stat.value}</p>
+              <p class="text-xs md:text-sm text-coffee-600 dark:text-slate-400 lg:text-gray-500 font-display">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
 
     <!-- Story -->
-    <section class="py-24 bg-white dark:bg-slate-900">
+    <section class="py-20 lg:py-32 bg-white dark:bg-slate-900">
       <div class="max-w-8xl mx-auto px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span class="font-display text-label text-terra tracking-widest uppercase block mb-3">Our Story</span>
-            <h2 class="font-display font-bold text-4xl text-gray-900 dark:text-white mb-6">
+            <h2 class="font-display font-bold text-3xl lg:text-4xl text-gray-900 dark:text-white mb-6">
               개발자가 커피를<br>로스팅하는 이유
             </h2>
-            <div class="space-y-4 text-gray-600 dark:text-slate-300 leading-relaxed">
+            <div class="space-y-4 text-gray-600 dark:text-slate-300 leading-relaxed text-sm lg:text-base">
               <p>RefX는 백엔드 개발에 대한 깊은 열정에서 시작했습니다. Spring Boot와 Java로 복잡한 시스템을 설계하고, 코드 한 줄로 수천 명의 사용자 경험을 바꾸는 일에 보람을 느꼈습니다.</p>
               <p>그 과정에서 좋은 커피가 개발자의 집중력과 창의성을 얼마나 높이는지 발견했고, 직접 원두를 선별하고 로스팅하기 시작했습니다. 그렇게 레퍼런스커피가 탄생했습니다.</p>
               <p>기술과 커피, 두 가지 모두 정밀함과 디테일에 대한 집착에서 최고의 결과물이 나온다는 것을 알고 있습니다.</p>
             </div>
           </div>
 
-          <!-- Timeline -->
-          <div class="bg-gray-50 dark:bg-slate-800 rounded-card p-8 border border-gray-100 dark:border-slate-700">
-            <h3 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-6">연혁</h3>
-            <div class="space-y-5">
+          <!-- Desktop: Decorative Visual -->
+          <div class="hidden lg:flex items-center justify-center">
+            <div class="relative w-72 h-72">
+              <div class="absolute inset-0 rounded-full bg-gradient-to-br from-coffee-100 to-coffee-200 dark:from-slate-700 dark:to-slate-600 opacity-70"></div>
+              <div class="absolute inset-8 rounded-full bg-gradient-to-br from-terra/20 to-coffee-300/30"></div>
+              <div class="absolute inset-16 rounded-full bg-gradient-to-br from-terra/30 to-coffee-400/40"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-6xl">☕</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile/Tablet: Timeline -->
+          <div class="lg:hidden bg-gray-50 dark:bg-slate-800 rounded-card p-6 border border-gray-100 dark:border-slate-700">
+            <h3 class="font-display font-bold text-base text-gray-900 dark:text-white mb-5">연혁</h3>
+            <div class="space-y-4">
               {[
                 { year: '2020', event: '레퍼런스엑스 설립, 백엔드 개발 서비스 시작' },
                 { year: '2021', event: '레퍼런스커피 브랜드 런칭, 네이버 스마트스토어 오픈' },
@@ -51,7 +100,7 @@ import Footer from '../components/Footer.astro';
                 { year: '2025', event: 'MCP 프로토콜 연동, 200+ 고객 달성' },
               ].map(item => (
                 <div class="flex gap-4">
-                  <span class="font-mono text-sm text-terra font-bold w-12 shrink-0 pt-0.5">{item.year}</span>
+                  <span class="font-mono text-xs text-terra font-bold w-10 shrink-0 pt-0.5">{item.year}</span>
                   <p class="text-gray-700 dark:text-slate-300 text-sm leading-relaxed">{item.event}</p>
                 </div>
               ))}
@@ -62,30 +111,53 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- Mission / Vision -->
-    <section class="py-24 bg-gray-50 dark:bg-slate-800">
+    <section class="py-20 lg:py-24 bg-gray-50 dark:bg-slate-800">
       <div class="max-w-8xl mx-auto px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <span class="font-display text-label text-terra tracking-widest uppercase block mb-8">Mission & Vision</span>
+
+        <!-- Mobile/Tablet: Colored Cards -->
+        <div class="grid md:grid-cols-2 gap-6 lg:hidden">
           <div class="bg-blue-700 rounded-card p-8 text-white">
-            <span class="font-display text-label tracking-widest uppercase block mb-3 text-blue-200">Mission</span>
-            <h3 class="font-display font-bold text-2xl mb-4">기술로 가치를 창조한다</h3>
-            <p class="text-blue-100 leading-relaxed">최신 기술과 AI 자동화로 클라이언트의 비즈니스 문제를 해결하고, 지속 가능한 성장을 돕습니다.</p>
+            <span class="font-display font-black text-4xl text-blue-300 block mb-3">01</span>
+            <h3 class="font-display font-bold text-xl mb-3">기술로 가치를 창조한다</h3>
+            <p class="text-blue-100 text-sm leading-relaxed">최신 기술과 AI 자동화로 클라이언트의 비즈니스 문제를 해결하고, 지속 가능한 성장을 돕습니다.</p>
           </div>
           <div class="bg-coffee-700 rounded-card p-8 text-white">
-            <span class="font-display text-label tracking-widest uppercase block mb-3 text-coffee-300">Vision</span>
-            <h3 class="font-display font-bold text-2xl mb-4">기술과 문화를 잇는 브랜드</h3>
-            <p class="text-coffee-100 leading-relaxed">개발 기술과 커피 문화를 연결하는 독특한 브랜드로, 두 영역에서 모두 업계를 선도합니다.</p>
+            <span class="font-display font-black text-4xl text-coffee-300 block mb-3">02</span>
+            <h3 class="font-display font-bold text-xl mb-3">기술과 문화를 잇는 브랜드</h3>
+            <p class="text-coffee-100 text-sm leading-relaxed">개발 기술과 커피 문화를 연결하는 독특한 브랜드로, 두 영역에서 모두 업계를 선도합니다.</p>
           </div>
         </div>
 
+        <!-- Desktop: Plain Numbered -->
+        <div class="hidden lg:grid lg:grid-cols-2 gap-16">
+          <div>
+            <span class="font-mono font-bold text-terra text-sm block mb-4">01</span>
+            <h3 class="font-display font-bold text-2xl text-gray-900 dark:text-white mb-3">기술로 가치를 창조한다</h3>
+            <p class="text-gray-600 dark:text-slate-400 leading-relaxed">최신 기술과 AI 자동화로 클라이언트의 비즈니스 문제를 해결하고, 지속 가능한 성장을 돕습니다.</p>
+          </div>
+          <div>
+            <span class="font-mono font-bold text-terra text-sm block mb-4">02</span>
+            <h3 class="font-display font-bold text-2xl text-gray-900 dark:text-white mb-3">기술과 문화를 잇는 브랜드</h3>
+            <p class="text-gray-600 dark:text-slate-400 leading-relaxed">개발 기술과 커피 문화를 연결하는 독특한 브랜드로, 두 영역에서 모두 업계를 선도합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 lg:py-24 bg-white dark:bg-slate-900">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
         <span class="font-display text-label text-terra tracking-widest uppercase block mb-8">Core Values</span>
         <div class="grid md:grid-cols-3 gap-6">
           {[
-            { icon: '🎯', title: '정밀함', desc: '코드든 커피든, 디테일이 품질을 결정합니다. 한 줄의 코드, 한 알의 원두에도 최선을 다합니다.' },
-            { icon: '🚀', title: '혁신', desc: 'Java 25 LTS, Claude Code AI 등 최신 기술을 가장 먼저 도입하고 적용합니다.' },
-            { icon: '🤝', title: '신뢰', desc: '99.5% 가동률과 200+ 만족 고객이 증명하는 신뢰. 수치로 약속을 지킵니다.' },
+            { num: '01', icon: '🎯', title: '정밀함', desc: '코드든 커피든, 디테일이 품질을 결정합니다. 한 줄의 코드, 한 알의 원두에도 최선을 다합니다.' },
+            { num: '02', icon: '🚀', title: '혁신', desc: 'Java 25 LTS, Claude Code AI 등 최신 기술을 가장 먼저 도입하고 적용합니다.' },
+            { num: '03', icon: '🤝', title: '신뢰', desc: '99.5% 가동률과 200+ 만족 고객이 증명하는 신뢰. 수치로 약속을 지킵니다.' },
           ].map(v => (
-            <div class="bg-white dark:bg-slate-900 rounded-feature p-6 border border-gray-100 dark:border-slate-700">
-              <div class="text-3xl mb-4">{v.icon}</div>
+            <div class="bg-gray-50 dark:bg-slate-800 rounded-feature p-6 border border-gray-100 dark:border-slate-700">
+              <span class="font-mono font-bold text-terra text-xs block mb-3">{v.num}</span>
+              <div class="text-2xl mb-3">{v.icon}</div>
               <h4 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-2">{v.title}</h4>
               <p class="text-gray-600 dark:text-slate-400 text-sm leading-relaxed">{v.desc}</p>
             </div>
@@ -97,13 +169,14 @@ import Footer from '../components/Footer.astro';
     <!-- CTA -->
     <section class="py-20 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800">
       <div class="max-w-8xl mx-auto px-6 lg:px-8 text-center">
-        <h2 class="font-display font-black text-4xl text-gray-900 dark:text-white mb-4">함께 일하고 싶으신가요?</h2>
+        <h2 class="font-display font-black text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">함께 일하고 싶으신가요?</h2>
         <p class="text-gray-600 dark:text-slate-300 mb-8">프로젝트 문의나 협업 제안을 환영합니다.</p>
         <a href="/contact" class="px-8 py-4 bg-terra text-white font-display font-bold rounded-btn hover:bg-terra-hover transition-colors">
-          문의하기
+          문의하기 →
         </a>
       </div>
     </section>
+
   </main>
   <Footer />
 </BaseLayout>
