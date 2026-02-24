@@ -39,9 +39,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <meta property="twitter:description" content={description} />
   <meta property="twitter:image" content={new URL(ogImage, Astro.url)} />
 
-  <!-- Preload fonts -->
+  <!-- Google Fonts: Montserrat + Noto Sans KR + Roboto Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -58,8 +59,18 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       ]
     }
   </script>
+
+  <!-- Dark mode: must run before body renders to prevent flash -->
+  <script is:inline>
+    (function() {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = stored || (prefersDark ? 'dark' : 'light');
+      if (theme === 'dark') document.documentElement.classList.add('dark');
+    })();
+  </script>
 </head>
-<body class="min-h-screen bg-white text-gray-900">
+<body class="min-h-screen bg-white dark:bg-slate-900 text-gray-900 dark:text-slate-100 transition-colors duration-300">
   <slot />
 </body>
 </html>

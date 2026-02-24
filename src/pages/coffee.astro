@@ -4,35 +4,29 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="레퍼런스커피 - RefX" description="AI 기술로 운영되는 프리미엄 커피 브랜드. DALL-E 3 이미지 생성, GPT-4o 컨텐츠 자동화, 실시간 주문 모니터링 시스템.">
+<BaseLayout title="레퍼런스커피 - RefX" description="기술 스타트업이 만드는 프리미엄 커피 브랜드, 레퍼런스커피">
   <Header />
-
   <main>
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-coffee-900 to-coffee-700 text-white py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <div class="flex justify-center items-center gap-3 mb-6">
-            <span class="text-6xl">☕</span>
-            <span class="text-4xl">+</span>
-            <span class="text-6xl">🤖</span>
-          </div>
-          <span class="inline-block px-4 py-1 bg-purple-600 text-white text-sm font-semibold rounded-full mb-4">AI-Powered Coffee Brand</span>
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">레퍼런스커피</h1>
-          <p class="text-xl text-coffee-200 max-w-3xl mx-auto">
-            <strong>AI 기술</strong>로 운영되는 프리미엄 커피 브랜드<br>
-            DALL-E 3 이미지 생성 • GPT-4o 컨텐츠 자동화 • 실시간 주문 모니터링
+    <!-- Hero: Full-bleed Coffee Dark -->
+    <section class="bg-coffee-900 text-white py-28 lg:py-40 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-700 opacity-90"></div>
+      <div class="relative max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <span class="font-display text-label text-coffee-300 tracking-widest uppercase block mb-4">Reference Coffee</span>
+          <h1 class="font-display font-black text-5xl md:text-6xl leading-tight mb-6">
+            ☕ 코드처럼<br>정밀하게<br>로스팅된 <span class="text-coffee-300">커피</span>
+          </h1>
+          <p class="text-coffee-100 text-lg leading-relaxed mb-10">
+            엄선된 원두, 데이터 기반 로스팅 프로파일.<br>기술 스타트업이 만드는 프리미엄 커피.
           </p>
-          <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="bg-white text-coffee-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
-              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-              </svg>
-              스마트스토어에서 주문하기
+          <div class="flex flex-wrap gap-4">
+            <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer"
+              class="px-6 py-3 bg-coffee-400 text-white font-display font-bold rounded-btn hover:bg-coffee-600 transition-colors">
+              스마트스토어에서 구매 →
             </a>
-            <a href="https://instagram.com/refx.coffee" target="_blank" rel="noopener noreferrer" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-coffee-900 transition-colors inline-flex items-center justify-center">
-              <span class="mr-2">📸</span>
-              AI 생성 컨텐츠 보기
+            <a href="https://instagram.com/refx.coffee" target="_blank" rel="noopener noreferrer"
+              class="px-6 py-3 border border-coffee-400 text-coffee-300 font-display font-bold rounded-btn hover:bg-coffee-800 transition-colors">
+              인스타그램 팔로우
             </a>
           </div>
         </div>
@@ -40,512 +34,97 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- Brand Story -->
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section class="py-24 bg-white dark:bg-slate-900">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">브랜드 스토리</h2>
-            <div class="space-y-4 text-gray-600">
-              <p>
-                레퍼런스커피는 개발자의 일상에서 시작되었습니다.
-                코딩과 함께하는 완벽한 커피를 찾는 여정에서 탄생한 프리미엄 브랜드입니다.
-              </p>
-              <p>
-                우리는 커피 한 잔이 단순한 음료가 아니라, 창작과 집중을 위한 필수 요소라고 믿습니다.
-                그래서 엄선된 원두와 정교한 로스팅 과정을 통해
-                개발자들의 창의성을 극대화할 수 있는 커피를 만들고 있습니다.
-              </p>
-              <p>
-                기술에 대한 완벽함을 추구하는 마음으로 커피에도 타협하지 않는 품질을 구현합니다.
-                매일 마시는 커피가 특별한 경험이 되도록 하는 것이 우리의 목표입니다.
-              </p>
+            <span class="font-display text-label text-terra tracking-widest uppercase block mb-3">Brand Story</span>
+            <h2 class="font-display font-bold text-4xl text-gray-900 dark:text-white mb-6">
+              기술자가 커피를<br>진지하게 대하면
+            </h2>
+            <div class="space-y-4 text-gray-600 dark:text-slate-300 leading-relaxed">
+              <p>개발자는 데이터를 믿습니다. 레퍼런스커피는 원두의 산지, 고도, 수확 시기, 가공 방식을 모두 기록하고 분석합니다.</p>
+              <p>로스팅 온도, 시간, 냉각 속도 — 모든 변수를 정밀하게 제어합니다. 마치 프로덕션 서버를 모니터링하듯, 커피의 모든 순간을 관리합니다.</p>
+              <p>그 결과물이 바로 레퍼런스커피입니다. 200명이 넘는 고객이 반복 구매로 신뢰를 보내주고 있습니다.</p>
             </div>
           </div>
-          <div class="bg-coffee-50 rounded-lg p-8">
-            <div class="text-center">
-              <div class="text-6xl mb-4">📊</div>
-              <h3 class="text-2xl font-semibold text-coffee-900 mb-4">성장 지표</h3>
-              <div class="grid grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded-lg">
-                  <div class="text-2xl font-bold text-coffee-900">200+</div>
-                  <div class="text-sm text-coffee-700">만족한 고객</div>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                  <div class="text-2xl font-bold text-coffee-900">7배</div>
-                  <div class="text-sm text-coffee-700">단기간 성장률</div>
-                  <div class="text-xs text-coffee-600">Instagram 153→200+</div>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                  <div class="text-2xl font-bold text-coffee-900">★4.9</div>
-                  <div class="text-sm text-coffee-700">스마트스토어 평점</div>
-                  <div class="text-xs text-coffee-600">네이버 고객 리뷰</div>
-                </div>
-                <div class="bg-white p-4 rounded-lg">
-                  <div class="text-2xl font-bold text-coffee-900">24/7</div>
-                  <div class="text-sm text-coffee-700">주문 모니터링</div>
-                </div>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            {[
+              { value: '200+', label: '누적 고객', color: 'text-coffee-700 dark:text-coffee-400' },
+              { value: '4.8★', label: '평균 리뷰', color: 'text-coffee-700 dark:text-coffee-400' },
+              { value: '7x', label: '성장률', color: 'text-coffee-700 dark:text-coffee-400' },
+              { value: '재구매', label: '높은 재구매율', color: 'text-coffee-700 dark:text-coffee-400' },
+            ].map(stat => (
+              <div class="bg-coffee-50 dark:bg-slate-800 rounded-card p-6 text-center border border-coffee-100 dark:border-slate-700">
+                <p class={`font-display font-black text-4xl ${stat.color} mb-2`}>{stat.value}</p>
+                <p class="text-sm text-gray-600 dark:text-slate-400 font-display">{stat.label}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Product Features -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">왜 레퍼런스커피인가요?</h2>
-          <p class="text-xl text-gray-600">개발자를 위해 특별히 설계된 프리미엄 커피</p>
+    <!-- Products -->
+    <section class="py-24 bg-gray-50 dark:bg-slate-800">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="mb-12">
+          <span class="font-display text-label text-terra tracking-widest uppercase block mb-3">Products</span>
+          <h2 class="font-display font-bold text-4xl text-gray-900 dark:text-white">제품 라인업</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Quality -->
-          <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-            <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+        <div class="grid md:grid-cols-3 gap-6">
+          {[
+            { icon: '🫘', title: '싱글 오리진', desc: '에티오피아, 콜롬비아, 케냐 등 엄선된 산지의 단일 품종 원두. 각 산지 고유의 맛을 느껴보세요.', tag: 'Single Origin' },
+            { icon: '☕', title: '하우스 블렌드', desc: '레퍼런스커피 시그니처 블렌딩. 균형 잡힌 산미와 묵직한 바디감이 특징입니다.', tag: 'House Blend' },
+            { icon: '🎁', title: '선물 세트', desc: '개발자 동료, 팀 선물로 인기. 3종 샘플러 패키지로 다양한 맛을 경험해 보세요.', tag: 'Gift Set' },
+          ].map(p => (
+            <div class="bg-white dark:bg-slate-900 rounded-card p-6 border border-gray-100 dark:border-slate-700 hover:shadow-card-hover transition-all duration-300">
+              <div class="text-4xl mb-4">{p.icon}</div>
+              <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">{p.title}</h3>
+              <p class="text-gray-600 dark:text-slate-400 text-sm leading-relaxed mb-4">{p.desc}</p>
+              <span class="font-mono text-xs text-terra">{p.tag}</span>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">엄선된 원두</h3>
-            <p class="text-gray-600">
-              세계 각지의 최고 품질 원두만을 엄선하여
-              일관된 품질과 풍부한 향을 보장합니다.
-            </p>
-          </div>
-
-          <!-- Roasting -->
-          <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-            <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">정교한 로스팅</h3>
-            <p class="text-gray-600">
-              원두별 최적의 로스팅 프로파일을 적용하여
-              각 원두의 고유한 특성을 극대화합니다.
-            </p>
-          </div>
-
-          <!-- Fresh -->
-          <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-            <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-4">신선한 배송</h3>
-            <p class="text-gray-600">
-              주문 즉시 로스팅하여 최고의 신선도로
-              고객에게 전달되는 시스템을 구축했습니다.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>
 
-    <!-- Product Line -->
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">제품 라인업</h2>
-          <p class="text-xl text-gray-600">다양한 취향과 상황에 맞는 프리미엄 블렌드</p>
+    <!-- Why Data-Driven Coffee -->
+    <section class="py-24 bg-slate-900 text-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="mb-12">
+          <span class="font-display text-label text-coffee-300 tracking-widest uppercase block mb-3">Why Different</span>
+          <h2 class="font-display font-bold text-4xl">기술 스타트업의<br>커피가 다른 이유</h2>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Morning Blend -->
-          <div class="bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl p-6">
-            <div class="text-center">
-              <div class="text-4xl mb-4">🌅</div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Morning Code Blend</h3>
-              <p class="text-gray-600 mb-4">
-                아침 첫 커밋을 위한 부드럽고 깔끔한 맛의 블렌드
-              </p>
-              <div class="text-sm text-gray-500">
-                <span class="font-medium">로스팅:</span> 미디엄 라이트<br>
-                <span class="font-medium">맛:</span> 과일향, 꽃향, 밝은 산미
-              </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          {[
+            { icon: '📊', title: '데이터 기반 로스팅', desc: '온도·시간·냉각 모든 변수를 기록하고 분석. 매 배치마다 일관된 품질을 보장합니다.' },
+            { icon: '🔬', title: '원두 트레이서빌리티', desc: '산지·고도·수확 시기·가공 방식을 모두 추적. 투명한 원두 이력관리.' },
+            { icon: '🚀', title: '빠른 로스팅 & 배송', desc: '주문 후 신선하게 로스팅. 네이버 스마트스토어 통해 빠른 배송.' },
+          ].map(item => (
+            <div class="bg-slate-800 rounded-feature p-6 border-l-4 border-coffee-400">
+              <div class="text-3xl mb-4">{item.icon}</div>
+              <h4 class="font-display font-bold text-lg text-white mb-2">{item.title}</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
             </div>
-          </div>
-
-          <!-- Focus Blend -->
-          <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-6">
-            <div class="text-center">
-              <div class="text-4xl mb-4">🎯</div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Deep Focus Blend</h3>
-              <p class="text-gray-600 mb-4">
-                깊은 집중이 필요한 코딩 세션을 위한 진한 풍미
-              </p>
-              <div class="text-sm text-gray-500">
-                <span class="font-medium">로스팅:</span> 미디엄 다크<br>
-                <span class="font-medium">맛:</span> 초콜릿, 견과류, 묵직한 바디
-              </div>
-            </div>
-          </div>
-
-          <!-- Debug Blend -->
-          <div class="bg-gradient-to-br from-red-100 to-pink-100 rounded-xl p-6">
-            <div class="text-center">
-              <div class="text-4xl mb-4">🐛</div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Debug Blend</h3>
-              <p class="text-gray-600 mb-4">
-                버그 잡기와 야간 작업을 위한 강렬한 에너지
-              </p>
-              <div class="text-sm text-gray-500">
-                <span class="font-medium">로스팅:</span> 다크<br>
-                <span class="font-medium">맛:</span> 카라멜, 스모키, 강한 쓴맛
-              </div>
-            </div>
-          </div>
-
-          <!-- Decaf Blend -->
-          <div class="bg-gradient-to-br from-green-100 to-teal-100 rounded-xl p-6">
-            <div class="text-center">
-              <div class="text-4xl mb-4">🌙</div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Late Night Decaf</h3>
-              <p class="text-gray-600 mb-4">
-                저녁 시간 코드 리뷰를 위한 카페인 없는 깊은 맛
-              </p>
-              <div class="text-sm text-gray-500">
-                <span class="font-medium">로스팅:</span> 미디엄<br>
-                <span class="font-medium">맛:</span> 부드러운 단맛, 밸런스
-              </div>
-            </div>
-          </div>
-
-          <!-- Cold Brew -->
-          <div class="bg-gradient-to-br from-purple-100 to-blue-100 rounded-xl p-6">
-            <div class="text-center">
-              <div class="text-4xl mb-4">🧊</div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Cold Brew Special</h3>
-              <p class="text-gray-600 mb-4">
-                더운 여름 코딩을 위한 특별한 콜드브루 블렌드
-              </p>
-              <div class="text-sm text-gray-500">
-                <span class="font-medium">로스팅:</span> 미디엄<br>
-                <span class="font-medium">맛:</span> 달콤함, 부드러운 목넘김
-              </div>
-            </div>
-          </div>
-
-          <!-- Single Origin -->
-          <div class="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-xl p-6">
-            <div class="text-center">
-              <div class="text-4xl mb-4">🌍</div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">Single Origin Series</h3>
-              <p class="text-gray-600 mb-4">
-                매월 다른 지역의 특별한 원두로 만나는 한정판
-              </p>
-              <div class="text-sm text-gray-500">
-                <span class="font-medium">로스팅:</span> 다양<br>
-                <span class="font-medium">맛:</span> 지역별 고유 특성
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
 
-    <!-- AI Technology Integration -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <span class="inline-block px-3 py-1 bg-purple-100 text-purple-800 text-sm font-semibold rounded-full mb-4">AI-Powered Operations</span>
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">AI 기술로 운영되는 스마트 커피 브랜드</h2>
-          <p class="text-xl text-gray-600">OpenAI의 최신 AI 기술로 컨텐츠 생성부터 주문 관리까지 자동화</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- AI Content Generation -->
-          <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-purple-200">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">🎨</span>
-              </div>
-              <div>
-                <span class="text-xs text-purple-600 font-semibold">AI CONTENT</span>
-                <h3 class="text-xl font-semibold text-gray-900">AI 이미지 & 컨텐츠 자동 생성</h3>
-              </div>
-            </div>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>DALL-E 3</strong> - 한국 배경 사실적 커피 이미지 자동 생성
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>GPT-4o</strong> - 상황별 동적 프롬프트 및 캡션 자동 작성
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>Vision API</strong> - 컨텐츠 품질 분석 및 A/B 테스트
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-purple-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>K-Culture 트렌드</strong> - K-드라마/K-pop 문화 자동 반영
-                </div>
-              </li>
-            </ul>
-            <div class="mt-6 p-4 bg-purple-50 rounded-lg">
-              <div class="text-sm text-purple-800">
-                <strong>330가지</strong> 프롬프트 조합 • 컨텐츠 품질 <strong>88/100</strong> • 이미지-텍스트 일관성 <strong>95%</strong>
-              </div>
-            </div>
-          </div>
-
-          <!-- Instagram Automation -->
-          <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-pink-200">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-white text-xl">📸</span>
-              </div>
-              <div>
-                <span class="text-xs text-pink-600 font-semibold">AUTO POSTING</span>
-                <h3 class="text-xl font-semibold text-gray-900">Instagram 마케팅 자동화</h3>
-              </div>
-            </div>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>상황별 자동 포스팅</strong> - 아침 7:30 / 오후 15:00 / 저녁 19:00
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>AI 이미지 생성</strong> - 시간대별 최적화된 커피 이미지
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>해시태그 최적화</strong> - 카테고리별 전략적 20개 배분
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>요일/공휴일 반영</strong> - 시즈널 컨텐츠 자동 적용
-                </div>
-              </li>
-            </ul>
-            <div class="mt-6 p-4 bg-pink-50 rounded-lg">
-              <div class="text-sm text-pink-800">
-                <strong>200+</strong> 팔로워 달성 • 하루 <strong>3회</strong> 자동 포스팅 • <strong>7배</strong> 성장률
-              </div>
-            </div>
-          </div>
-
-          <!-- Order Monitoring -->
-          <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-green-200">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <div>
-                <span class="text-xs text-green-600 font-semibold">REAL-TIME</span>
-                <h3 class="text-xl font-semibold text-gray-900">실시간 주문 모니터링</h3>
-              </div>
-            </div>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>Spring Boot + WebFlux</strong> - 반응형 주문 처리 시스템
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>텔레그램 실시간 알림</strong> - 신규 주문 즉시 알림
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>멀티플랫폼 통합</strong> - 네이버/카카오쇼핑 통합 관리
-                </div>
-              </li>
-              <li class="flex items-start">
-                <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                <div>
-                  <strong>중복 방지 시스템</strong> - 캐시 + DB 이중 체크
-                </div>
-              </li>
-            </ul>
-            <div class="mt-6 p-4 bg-green-50 rounded-lg">
-              <div class="text-sm text-green-800">
-                <strong>99.9%</strong> 가동률 • <strong>1분</strong> 간격 모니터링 • <strong>24/7</strong> 무중단 운영
-              </div>
-            </div>
-          </div>
-
-          <!-- Tech Stack -->
-          <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-blue-200">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-              </div>
-              <div>
-                <span class="text-xs text-blue-600 font-semibold">TECH STACK</span>
-                <h3 class="text-xl font-semibold text-gray-900">사용 기술</h3>
-              </div>
-            </div>
-            <div class="grid grid-cols-2 gap-3">
-              <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                <span class="text-xl mr-2">🤖</span>
-                <div>
-                  <div class="font-semibold text-gray-900 text-sm">OpenAI</div>
-                  <div class="text-xs text-gray-600">GPT-4o, DALL-E 3, Vision</div>
-                </div>
-              </div>
-              <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                <span class="text-xl mr-2">🌱</span>
-                <div>
-                  <div class="font-semibold text-gray-900 text-sm">Spring Boot</div>
-                  <div class="text-xs text-gray-600">3.5.5 + WebFlux</div>
-                </div>
-              </div>
-              <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                <span class="text-xl mr-2">☕</span>
-                <div>
-                  <div class="font-semibold text-gray-900 text-sm">Java 24</div>
-                  <div class="text-xs text-gray-600">Latest LTS</div>
-                </div>
-              </div>
-              <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                <span class="text-xl mr-2">☁️</span>
-                <div>
-                  <div class="font-semibold text-gray-900 text-sm">AWS Lightsail</div>
-                  <div class="text-xs text-gray-600">24/7 운영</div>
-                </div>
-              </div>
-              <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                <span class="text-xl mr-2">📱</span>
-                <div>
-                  <div class="font-semibold text-gray-900 text-sm">Telegram Bot</div>
-                  <div class="text-xs text-gray-600">실시간 알림</div>
-                </div>
-              </div>
-              <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                <span class="text-xl mr-2">🔄</span>
-                <div>
-                  <div class="font-semibold text-gray-900 text-sm">GitHub Actions</div>
-                  <div class="text-xs text-gray-600">CI/CD 자동화</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social Media -->
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <span class="inline-block px-3 py-1 bg-pink-100 text-pink-800 text-sm font-semibold rounded-full mb-4">AI-Generated Content</span>
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">AI가 만드는 커피 컨텐츠</h2>
-          <p class="text-xl text-gray-600">DALL-E 3와 GPT-4o가 매일 생성하는 아름다운 커피 이미지와 스토리</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Instagram -->
-          <div class="bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl p-8 text-white text-center">
-            <div class="flex justify-center gap-2 mb-4">
-              <span class="text-4xl">📸</span>
-              <span class="text-4xl">🤖</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-2">Instagram</h3>
-            <span class="inline-block px-2 py-1 bg-white/20 text-white text-xs font-semibold rounded-full mb-4">AI Auto-Posting</span>
-            <p class="text-pink-100 mb-6">
-              <strong>DALL-E 3</strong>가 생성한 아름다운 커피 이미지<br>
-              <strong>GPT-4o</strong>가 작성한 감성적인 캡션<br>
-              하루 3회 자동 포스팅 (7:30 / 15:00 / 19:00)
-            </p>
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="bg-white/10 rounded-lg p-3">
-                <div class="text-2xl font-bold">200+</div>
-                <div class="text-xs text-pink-200">팔로워</div>
-              </div>
-              <div class="bg-white/10 rounded-lg p-3">
-                <div class="text-2xl font-bold">7배</div>
-                <div class="text-xs text-pink-200">성장률</div>
-              </div>
-            </div>
-            <a href="https://instagram.com/refx.coffee" target="_blank" rel="noopener noreferrer" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
-              <span class="mr-2">📸</span>
-              AI 생성 컨텐츠 보기
-            </a>
-          </div>
-
-          <!-- Naver SmartStore -->
-          <div class="bg-gradient-to-br from-green-500 to-blue-600 rounded-xl p-8 text-white text-center">
-            <div class="flex justify-center gap-2 mb-4">
-              <span class="text-4xl">🛒</span>
-              <span class="text-4xl">⚡</span>
-            </div>
-            <h3 class="text-2xl font-bold mb-2">네이버 스마트스토어</h3>
-            <span class="inline-block px-2 py-1 bg-white/20 text-white text-xs font-semibold rounded-full mb-4">Real-time Monitoring</span>
-            <p class="text-green-100 mb-6">
-              <strong>실시간 주문 알림</strong>으로 빠른 처리<br>
-              <strong>1분 간격 모니터링</strong>으로 놓치지 않는 서비스<br>
-              네이버페이로 안전한 결제
-            </p>
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="bg-white/10 rounded-lg p-3">
-                <div class="text-2xl font-bold">★ 4.9</div>
-                <div class="text-xs text-green-200">고객 만족도</div>
-              </div>
-              <div class="bg-white/10 rounded-lg p-3">
-                <div class="text-2xl font-bold">99.9%</div>
-                <div class="text-xs text-green-200">시스템 가동률</div>
-              </div>
-            </div>
-            <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
-              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-              </svg>
-              스토어 방문하기
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="bg-coffee-900 text-white py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          완벽한 커피와 함께 코딩하세요
-        </h2>
-        <p class="text-xl text-coffee-200 mb-8">
-          개발자를 위해 특별히 만든 레퍼런스커피를 지금 주문하세요
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer" class="bg-white text-coffee-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            지금 주문하기
-          </a>
-          <a href="https://instagram.com/refx.coffee" target="_blank" rel="noopener noreferrer" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-coffee-900 transition-colors">
-            인스타그램 보기
-          </a>
-        </div>
+    <!-- CTA -->
+    <section class="py-20 bg-coffee-900 text-white">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="font-display font-black text-4xl mb-4">지금 바로 주문하세요</h2>
+        <p class="text-coffee-200 mb-8">네이버 스마트스토어에서 신선하게 로스팅된 원두를 만나보세요.</p>
+        <a href="https://smartstore.naver.com/refcoffee" target="_blank" rel="noopener noreferrer"
+          class="px-8 py-4 bg-coffee-400 text-white font-display font-bold rounded-btn hover:bg-coffee-600 transition-colors">
+          스마트스토어 바로가기 →
+        </a>
       </div>
     </section>
   </main>
-
   <Footer />
 </BaseLayout>

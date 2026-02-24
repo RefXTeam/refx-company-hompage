@@ -4,258 +4,106 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="회사소개 - RefX" description="레퍼런스엑스의 비전, 미션, 그리고 팀에 대해 알아보세요.">
+<BaseLayout title="회사소개 - RefX" description="기술과 커피가 만나는 곳, 레퍼런스엑스의 이야기">
   <Header />
-
   <main>
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">About RefX</h1>
-          <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-            기술과 커피, 두 가지 열정이 만나 새로운 가치를 창조하는 곳
+    <!-- Hero: Warm Coffee Gradient -->
+    <section class="bg-gradient-to-br from-coffee-700 via-coffee-800 to-coffee-900 text-white py-24 lg:py-32">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="max-w-2xl">
+          <span class="font-display text-label text-coffee-300 tracking-widest uppercase block mb-4">About RefX</span>
+          <h1 class="font-display font-black text-5xl md:text-6xl leading-tight mb-6">
+            기술과 커피,<br>두 가지 열정으로<br>만드는 <span class="text-coffee-300">가치</span>
+          </h1>
+          <p class="text-coffee-100 text-lg leading-relaxed">
+            백엔드 개발 전문 기업이자 프리미엄 커피 브랜드. 두 영역 모두에서 타협 없는 품질을 추구합니다.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Company Story -->
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Story -->
+    <section class="py-24 bg-white dark:bg-slate-900">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
           <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">우리의 이야기</h2>
-            <div class="space-y-4 text-gray-600">
-              <p>
-                <strong>2025년, 한국에서 시작된 레퍼런스엑스(RefX)</strong>는 백엔드 개발의 전문성과 커피에 대한 열정을 하나로 결합한 독창적인 기술 기업입니다.
-              </p>
-              <p>
-                Spring Boot 4.x.x와 Java 25 (LTS)를 기반으로 한 <strong>99.5% 가동률의 실시간 주문 모니터링 시스템</strong>을 구축하며 기술력을 검증받았고,
-                동시에 네이버 스마트스토어에서 <strong>200+ 고객이 인정한 프리미엄 커피 브랜드</strong> '레퍼런스커피'를 성공적으로 운영하고 있습니다.
-              </p>
-              <p>
-                단 몇 개월 만에 <strong>7배 성장</strong>을 달성한 우리의 비결은 단순합니다.
-                개발자가 매일 마시는 커피처럼, 기술도 일상에 녹아들어 자연스럽게 가치를 창출해야 한다는 철학입니다.
-              </p>
-              <p>
-                월 <strong>$1.5의 초저비용 인프라</strong>로 전문적인 웹사이트를 운영하고,
-                <strong>AWS Lightsail</strong>에서 안정적인 백엔드 서비스를 제공하며,
-                매일 신선한 커피로 고객의 일상에 특별함을 더하고 있습니다.
-              </p>
+            <span class="font-display text-label text-terra tracking-widest uppercase block mb-3">Our Story</span>
+            <h2 class="font-display font-bold text-4xl text-gray-900 dark:text-white mb-6">
+              개발자가 커피를<br>로스팅하는 이유
+            </h2>
+            <div class="space-y-4 text-gray-600 dark:text-slate-300 leading-relaxed">
+              <p>RefX는 백엔드 개발에 대한 깊은 열정에서 시작했습니다. Spring Boot와 Java로 복잡한 시스템을 설계하고, 코드 한 줄로 수천 명의 사용자 경험을 바꾸는 일에 보람을 느꼈습니다.</p>
+              <p>그 과정에서 좋은 커피가 개발자의 집중력과 창의성을 얼마나 높이는지 발견했고, 직접 원두를 선별하고 로스팅하기 시작했습니다. 그렇게 레퍼런스커피가 탄생했습니다.</p>
+              <p>기술과 커피, 두 가지 모두 정밀함과 디테일에 대한 집착에서 최고의 결과물이 나온다는 것을 알고 있습니다.</p>
             </div>
           </div>
-          <div class="bg-gray-100 rounded-lg p-8">
-            <div class="text-center">
-              <div class="text-6xl mb-4">👨‍💻☕</div>
-              <h3 class="text-xl font-semibold text-gray-900 mb-2">기술과 커피의 만남</h3>
-              <p class="text-gray-600">
-                개발자의 필수품인 커피에서 시작된 우리의 여정
-              </p>
+
+          <!-- Timeline -->
+          <div class="bg-gray-50 dark:bg-slate-800 rounded-card p-8 border border-gray-100 dark:border-slate-700">
+            <h3 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-6">연혁</h3>
+            <div class="space-y-5">
+              {[
+                { year: '2020', event: '레퍼런스엑스 설립, 백엔드 개발 서비스 시작' },
+                { year: '2021', event: '레퍼런스커피 브랜드 런칭, 네이버 스마트스토어 오픈' },
+                { year: '2022', event: 'AWS 클라우드 인프라 전문화, 99.5% 가동률 달성' },
+                { year: '2023', event: 'Claude Code AI 자동화 도입, 개발 생산성 혁신' },
+                { year: '2024', event: 'Spring Boot 4.x + Java 25 LTS 선도적 전환' },
+                { year: '2025', event: 'MCP 프로토콜 연동, 200+ 고객 달성' },
+              ].map(item => (
+                <div class="flex gap-4">
+                  <span class="font-mono text-sm text-terra font-bold w-12 shrink-0 pt-0.5">{item.year}</span>
+                  <p class="text-gray-700 dark:text-slate-300 text-sm leading-relaxed">{item.event}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Mission & Vision -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Mission -->
-          <div class="bg-white rounded-xl shadow-lg p-8">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-refx-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Mission</h3>
-              <p class="text-gray-600">
-                최신 기술과 장인정신으로 디지털 혁신과 프리미엄 커피 경험을 제공하여,
-                고객의 일상에 특별한 가치를 더합니다.
-              </p>
-            </div>
+    <!-- Mission / Vision -->
+    <section class="py-24 bg-gray-50 dark:bg-slate-800">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <div class="bg-blue-700 rounded-card p-8 text-white">
+            <span class="font-display text-label tracking-widest uppercase block mb-3 text-blue-200">Mission</span>
+            <h3 class="font-display font-bold text-2xl mb-4">기술로 가치를 창조한다</h3>
+            <p class="text-blue-100 leading-relaxed">최신 기술과 AI 자동화로 클라이언트의 비즈니스 문제를 해결하고, 지속 가능한 성장을 돕습니다.</p>
           </div>
+          <div class="bg-coffee-700 rounded-card p-8 text-white">
+            <span class="font-display text-label tracking-widest uppercase block mb-3 text-coffee-300">Vision</span>
+            <h3 class="font-display font-bold text-2xl mb-4">기술과 문화를 잇는 브랜드</h3>
+            <p class="text-coffee-100 leading-relaxed">개발 기술과 커피 문화를 연결하는 독특한 브랜드로, 두 영역에서 모두 업계를 선도합니다.</p>
+          </div>
+        </div>
 
-          <!-- Vision -->
-          <div class="bg-white rounded-xl shadow-lg p-8">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-coffee-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Vision</h3>
-              <p class="text-gray-600">
-                기술과 커피의 완벽한 조화를 통해 업계의 새로운 기준을 제시하고,
-                혁신적인 서비스로 사회에 긍정적인 영향을 미치는 기업이 되겠습니다.
-              </p>
+        <span class="font-display text-label text-terra tracking-widest uppercase block mb-8">Core Values</span>
+        <div class="grid md:grid-cols-3 gap-6">
+          {[
+            { icon: '🎯', title: '정밀함', desc: '코드든 커피든, 디테일이 품질을 결정합니다. 한 줄의 코드, 한 알의 원두에도 최선을 다합니다.' },
+            { icon: '🚀', title: '혁신', desc: 'Java 25 LTS, Claude Code AI 등 최신 기술을 가장 먼저 도입하고 적용합니다.' },
+            { icon: '🤝', title: '신뢰', desc: '99.5% 가동률과 200+ 만족 고객이 증명하는 신뢰. 수치로 약속을 지킵니다.' },
+          ].map(v => (
+            <div class="bg-white dark:bg-slate-900 rounded-feature p-6 border border-gray-100 dark:border-slate-700">
+              <div class="text-3xl mb-4">{v.icon}</div>
+              <h4 class="font-display font-bold text-lg text-gray-900 dark:text-white mb-2">{v.title}</h4>
+              <p class="text-gray-600 dark:text-slate-400 text-sm leading-relaxed">{v.desc}</p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
 
-    <!-- CEO Profile -->
-    <section class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">CEO 프로필</h2>
-          <p class="text-xl text-gray-600">최광명 대표</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="bg-gradient-to-br from-refx-primary to-blue-700 rounded-xl p-8 text-white">
-              <h3 class="text-2xl font-bold mb-4">최광명 (Kwangmyung Choi)</h3>
-              <p class="text-blue-100 mb-4">CEO & Founder, RefX</p>
-              <div class="space-y-2 text-blue-100">
-                <p>• 백엔드 개발 전문가</p>
-                <p>• Spring Boot & Java 생태계 전문</p>
-                <p>• AI/ML 파이프라인 및 플랫폼 구축</p>
-                <p>• AWS 클라우드 아키텍처 및 DevOps</p>
-                <p>• Claude Code AI 자동화 (Worktree / tmux / MCP)</p>
-              </div>
-              <div class="mt-6">
-                <a href="https://www.linkedin.com/in/kwangmyung-choi-2792aa24/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-white hover:text-blue-200 transition-colors">
-                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                  </svg>
-                  LinkedIn 프로필
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="space-y-6">
-            <div>
-              <h4 class="text-xl font-semibold text-gray-900 mb-3">전문 분야</h4>
-              <div class="grid grid-cols-2 gap-4">
-                <div class="bg-blue-50 p-4 rounded-lg">
-                  <h5 class="font-semibold text-blue-900 mb-1">Backend Development</h5>
-                  <p class="text-sm text-blue-700">Java, Spring Boot, Microservices</p>
-                </div>
-                <div class="bg-purple-50 p-4 rounded-lg">
-                  <h5 class="font-semibold text-purple-900 mb-1">AI/Voice Technology</h5>
-                  <p class="text-sm text-purple-700">STT, TTS, LLM, Voice AI</p>
-                </div>
-                <div class="bg-green-50 p-4 rounded-lg">
-                  <h5 class="font-semibold text-green-900 mb-1">Cloud & DevOps</h5>
-                  <p class="text-sm text-green-700">AWS, ECS Fargate, CodePipeline</p>
-                </div>
-                <div class="bg-orange-50 p-4 rounded-lg">
-                  <h5 class="font-semibold text-orange-900 mb-1">Platform Engineering</h5>
-                  <p class="text-sm text-orange-700">AI Pipeline, Slack Alert 연동</p>
-                </div>
-                <div class="bg-indigo-50 p-4 rounded-lg col-span-2">
-                  <h5 class="font-semibold text-indigo-900 mb-1">AI 개발 자동화</h5>
-                  <p class="text-sm text-indigo-700">Claude Code, Git Worktree, tmux, MCP, AI Design 연동</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h4 class="text-xl font-semibold text-gray-900 mb-3">주요 성과 및 혁신</h4>
-              <ul class="space-y-3 text-gray-600">
-                <li class="flex items-start">
-                  <span class="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong>AI 음성 기술 플랫폼 구축 (마고 프로젝트)</strong><br>
-                    <span class="text-sm">STT, TTS, LLM, Vocal Biomarker, Voice Emotion Recognition 파이프라인 및 플랫폼 개발</span>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <span class="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong>AWS 서비스 운영 자동화 구축</strong><br>
-                    <span class="text-sm">CodePipeline, ECS Fargate 기반 자동 배포 및 Slack Alert 연동 모니터링 시스템</span>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <span class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong>실시간 모니터링 시스템 개발</strong><br>
-                    <span class="text-sm">Spring Boot 4.x.x + Java 25 LTS 기반, 99.5% 가동률, 1분 간격 자동 주문 처리</span>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <span class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong>초저비용 고성능 인프라 구현</strong><br>
-                    <span class="text-sm">AWS 대비 77% 비용 절감 ($6.5→$1.5/월), 동일한 성능과 안정성 보장</span>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <span class="w-2 h-2 bg-refx-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong>레퍼런스커피 폭발적 성장</strong><br>
-                    <span class="text-sm">200+ 고객 달성, 단기간 7배 성장률 기록</span>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <span class="w-2 h-2 bg-indigo-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <div>
-                    <strong>Claude Code AI 자동화 개발 워크플로우 구축</strong><br>
-                    <span class="text-sm">Claude Code + Git Worktree + tmux + Openclaw + MCP 표준 프로토콜을 활용한 병렬 AI 페어 프로그래밍 워크플로우 구현</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Values -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">핵심 가치</h2>
-          <p class="text-xl text-gray-600">우리가 소중히 여기는 가치들</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="text-center">
-            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">혁신</h3>
-            <p class="text-gray-600">
-              최신 기술을 적극 도입하고, 새로운 아이디어로 지속적인 혁신을 추구합니다.
-            </p>
-          </div>
-
-          <div class="text-center">
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">품질</h3>
-            <p class="text-gray-600">
-              타협하지 않는 품질로 고객에게 최고의 서비스와 제품을 제공합니다.
-            </p>
-          </div>
-
-          <div class="text-center">
-            <div class="w-16 h-16 bg-coffee-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-coffee-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">열정</h3>
-            <p class="text-gray-600">
-              기술과 커피에 대한 진정한 열정으로 모든 일에 최선을 다합니다.
-            </p>
-          </div>
-        </div>
+    <!-- CTA -->
+    <section class="py-20 bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800">
+      <div class="max-w-8xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="font-display font-black text-4xl text-gray-900 dark:text-white mb-4">함께 일하고 싶으신가요?</h2>
+        <p class="text-gray-600 dark:text-slate-300 mb-8">프로젝트 문의나 협업 제안을 환영합니다.</p>
+        <a href="/contact" class="px-8 py-4 bg-terra text-white font-display font-bold rounded-btn hover:bg-terra-hover transition-colors">
+          문의하기
+        </a>
       </div>
     </section>
   </main>
-
   <Footer />
 </BaseLayout>
