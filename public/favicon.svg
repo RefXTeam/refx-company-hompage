@@ -1,12 +1,26 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle -->
-  <circle cx="16" cy="16" r="16" fill="#2563eb"/>
-
-  <!-- Coffee cup -->
-  <path d="M8 12h12v8c0 2.21-1.79 4-4 4h-4c-2.21 0-4-1.79-4-4v-8z" fill="white"/>
-  <path d="M20 14v4c1.1 0 2-.9 2-2s-.9-2-2-2z" fill="white"/>
-
-  <!-- Steam -->
-  <path d="M11 8c0-1 0-2 1-2s1 1 1 2M14 8c0-1 0-2 1-2s1 1 1 2M17 8c0-1 0-2 1-2s1 1 1 2"
-        stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8742A"/>
+      <stop offset="100%" style="stop-color:#B85C35"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="6" ry="6" fill="url(#bg)"/>
+  <!-- White stroke outline for logo feel -->
+  <rect x="1.5" y="1.5" width="29" height="29" rx="5" ry="5" fill="none" stroke="rgba(255,240,220,0.5)" stroke-width="1"/>
+  <!-- "R" lettermark -->
+  <text
+    x="16"
+    y="23"
+    font-family="'Arial Black', 'Impact', 'Georgia', serif"
+    font-weight="900"
+    font-size="21"
+    fill="white"
+    text-anchor="middle"
+    letter-spacing="-1"
+    paint-order="stroke"
+    stroke="rgba(255,220,180,0.4)"
+    stroke-width="2"
+  >R</text>
 </svg>
